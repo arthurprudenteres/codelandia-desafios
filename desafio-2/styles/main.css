@@ -1,0 +1,94 @@
+.main__container { 
+  margin: 0 auto;
+}
+
+.main__hero {
+  height: 480px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  
+  background-image: url(/desafio-2/img/wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  margin-bottom: 60px;
+}
+
+.main__hero h2, .main__hero p{
+  max-width: 550px;
+  padding-left: 100px;
+}
+
+.main__hero h2 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: var(--white);
+}
+
+.main__hero p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+
+.main__content {
+  padding: 0 100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 24px;
+  margin-bottom: 60px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  
+  color: var(--black-light);
+}
+
+.title p {
+  font-size: 1.125rem;
+
+  color: var(--grey);
+}
+
+.shoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 40px;
+
+  margin-bottom: 100px;
+}
+
+.shoes__content {
+  width: 100%;
+  padding: 75px 25px;
+
+  background: var(--bg);
+}
+
+@media (max-width: 720px) {
+  .main__hero h2, .main__hero p {
+    padding: 0 20px;
+  }
+
+  .shoes {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .main__content {
+    padding: 0 20px;
+  }
+}

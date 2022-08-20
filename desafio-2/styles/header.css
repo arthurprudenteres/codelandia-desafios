@@ -1,0 +1,33 @@
+.header__container {
+margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 0;
+
+  background: var(--black-light);
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 0;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+
+  color: var(--black-light);
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 93.75%;
+  }
+}

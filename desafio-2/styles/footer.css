@@ -1,0 +1,11 @@
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px;
+
+  background: var(--black-light);
+
+  font-size: 1.125rem;
+}
