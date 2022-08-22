@@ -3,7 +3,8 @@
 }
 
 .main__hero {
-  height: 480px;
+  height: 550px;
+  min-height: 400px;
 
   display: flex;
   flex-direction: column;
@@ -11,14 +12,16 @@
   row-gap: 20px;
   
   background-image: url(/desafio-2/img/wallpaper.jpeg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   
   margin-bottom: 60px;
+  position: relative;
 }
 
-.main__hero h2, .main__hero p{
+.main__hero h2, .center {
   max-width: 550px;
   padding-left: 100px;
 }
@@ -30,7 +33,7 @@
   color: var(--white);
 }
 
-.main__hero p {
+.center {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 2.1rem;
@@ -62,37 +65,10 @@
   color: var(--grey);
 }
 
-.shoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 12px;
-  row-gap: 40px;
-
-  margin-bottom: 100px;
-}
-
-.shoes__content {
-  width: 100%;
-  padding: 75px 25px;
-
-  background: var(--bg);
-}
-
-@media (max-width: 1000px) {
-  .shoes {
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
-  }
-}
-
 @media (max-width: 720px) {
-  .main__hero h2, .main__hero p {
+  .main__hero h2, .center {
+    max-width: 400px;
     padding: 0 20px;
-  }
-
-  .shoes {
-    grid-template-columns: 1fr;
-    margin-bottom: 40px;
   }
 
   .main__content {

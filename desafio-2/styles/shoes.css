@@ -1,0 +1,48 @@
+.shoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 40px;
+
+  margin-bottom: 100px;
+}
+
+.shoes__content {
+  width: 100%;
+  padding: 75px 25px;
+
+  background: var(--bg);
+}
+
+.shoes__content_text {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 10px;
+  color: var(--black-light);
+  text-align: center;
+  transition: .3s all ease-in-out;
+  opacity: 0;
+}
+
+.shoes__content img {
+  transition: .3s all ease-in-out;
+}
+
+.shoes__content:hover img , .shoes__content:hover p {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+@media (max-width: 1000px) {
+  .shoes {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .shoes {
+    grid-template-columns: 1fr;
+    margin-bottom: 35px;
+  }
+}
