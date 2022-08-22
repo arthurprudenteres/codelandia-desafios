@@ -1,0 +1,74 @@
+@import url(header.css);
+@import url(app.css);
+@import url(main.css);
+@import url(footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+
+body, button, textarea {
+  color: var(--white);
+  font: 400 1rem "Lato", sans-serif;
+}
+
+body {
+  background: var(--white300);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
