@@ -1,0 +1,12 @@
+.left__side {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  width: 50%;
+  background: var(--white300);
+}
+
+.left__side img {
+  width: 600px;
+}

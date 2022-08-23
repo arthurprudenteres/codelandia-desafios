@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="sr" lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Codelândia | Desafio 4</title>
+  <meta name="description" content="Desafio 4 da Codelândia" />
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" type="image/jpg" href="./assets/img/favicon.ico" />
+
+  <!-- SCROLL REVEAL SCRIPT -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- SELECIONAR FONTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS STYLE LINK -->
+  <link rel="stylesheet" href="/desafio-4/styles/global.css" />
+</head>
+
+<body>
+  <div id="app">
+    <main>
+      <div class="page__container">
+        <div class="left__side">
+          <img src="assets/img/image.svg" alt="">
+        </div>
+        <div class="right__side">
+          <form action="." method="get" id="login-form" autocomplete="off" class="login-form">
+            <h2>Bem vindo de volta</h2>
+            <h1>Faça login na sua conta</h1>
+            <div>
+              <label for="email" class="label__email">
+                <span class="required">E-mail</span>
+                <input type="email" class="text" name="email" placeholder="E-mail" required>
+              </label>
+            </div>
+            <div>
+              <label for="password" class="label__password">
+                <span class="required">Senha</span>
+                <input type="password" class="text" name="password" placeholder="Senha" required>
+              </label>
+            </div>
+            <div class="remember__password">
+              <label class="radio__password" for="remember">
+                <input type="radio" name="remember" class="remember" id="remember" tabindex="3" />
+                <span>Lembre de mim</span>
+              </label>
+              <a class="forgot" href="#">Esqueceu sua senha?</a>
+            </div>
+            <button type="button" class="button__entrar">Entrar</button>
+            <button type="button" class="button__google"><img src="assets/img/iconfinder_Google_1298745 1.svg" alt="Login Google">Ou faça login com o Google</button>
+            <span class="no__account">Não tem uma conta?<a class="cadastrar" href="#"> Cadastre-se</a></span>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
