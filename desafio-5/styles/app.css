@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 13%;
+  padding-right: 13%; 
+  overflow: hidden;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

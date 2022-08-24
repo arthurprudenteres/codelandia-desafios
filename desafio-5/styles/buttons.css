@@ -1,0 +1,39 @@
+.main__buttons {
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+  transform: skew(-25deg);
+}
+
+.main__buttons button:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--green);
+}
+
+.main__buttons button:last-child {
+  background-color: transparent;
+  border: 2px solid var(--green);
+}
+
+.main__buttons button {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.main__buttons img {
+  transform: skew(25deg);
+  margin-right: 12px;
+}
+
+#button__text, #button__text2 {
+  transform: skew(25deg);
+}
+
+@media (max-width: 1080px) {
+  .main__buttons button:last-child {
+    display: none;
+  }
+}
