@@ -1,0 +1,82 @@
+@import url(header.css);
+@import url(app.css);
+@import url(main.css);
+
+@font-face {
+  font-family: 'B612';
+  src: url(/desafio-6/assets/fonts/B612-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;  
+}
+@font-face {
+  font-family: 'B612';
+  src: url(/desafio-6/assets/fonts/B612-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;  
+}
+@font-face {
+  font-family: 'B612';
+  src: url(/desafio-6/assets/fonts/B612-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;  
+}
+@font-face {
+  font-family: 'B612';
+  src: url(/desafio-6/assets/fonts/B612-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;  
+}
+
+:root {
+  --white: #ffffff;
+  --button1: #0072D2;
+  --button2: #131318;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button, textarea {
+  color: var(--white);
+  font: 400 1rem "B612", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, 
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
