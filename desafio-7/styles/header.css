@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-right: 12.5rem;
+
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -90px;
+  right: -170px;
+  background: var(--red);
+  width: 400px;
+  height: 300px;
+  filter: blur(200px);
+  transform: rotate(-120deg);
+  z-index: 0;
+}

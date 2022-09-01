@@ -1,0 +1,55 @@
+@import url(header.css);
+@import url(app.css);
+@import url(main.css);
+@import url(card.css);
+
+:root {
+  --white: #FFFFFF;
+  --red: #FF4656;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, 
+button, 
+textarea {
+  color: var(--white);
+  font: 400 1.6rem "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, 
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}

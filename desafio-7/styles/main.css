@@ -1,0 +1,43 @@
+main {
+  flex: 1;
+  min-height: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__right {
+  margin-top: 3.5rem;
+  z-index: 1;
+}
+
+.main__right img {
+  object-fit: cover;
+}
+
+.main__left h2 {
+  font-weight: 700;
+  font-size: 5.6rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFF;
+
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.social__media {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.main__cards {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+
+  margin-bottom: 24rem;
+}
